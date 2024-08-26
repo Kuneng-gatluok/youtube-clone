@@ -6,6 +6,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  padding-top: 0;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 #logo {
   width: 60px;
@@ -75,12 +79,62 @@ main {
 }
 .nav-bar {
   height: 80vh;
-  flex: 0.2;
-  background-color: green;
+  flex: 0.15;
+  /* Scrollbar */
+  overflow-y: auto;
+  scrollbar-width: thin;
 }
 .videos {
-  flex: 0.8;
-  display: flex;
-  background-color: pink;
+  flex: 0.85;
   gap: 20px;
+  /* Scrollbar */
+  overflow-y: auto;
+  scrollbar-width: thin;
+  height: 80vh;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.hr {
+  border: 1px solid #f1f1f1;
+  margin: 10px 0;
+}
+.videos {
+  /* A flexible grid with a maximum of 6 elements on a large scree */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 20px;
+}
+.video {
+  padding: 10px;
+  border-radius: 10px;
+  width: 380px;
+}
+.thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+.video-info {
+  display: flex;
+  gap: 10px;
+}
+.video-text > p {
+  font-size: 14px;
+  color: gray;
 }
