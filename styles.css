@@ -138,3 +138,22 @@ main {
   font-size: 14px;
   color: gray;
 }
+.content{
+  width: calc(100vw - 240px);
+}
+.chip-tit{
+  overflow-x: scroll;
+  background-color: #181818;
+  display: flex;
+}
+.chip{
+  margin: 12px 6px;
+  background-color: #373737;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  white-space: nowrap;
+  cursor: pointer;
+  color: #fff;
+  transition: .5s;
+}
